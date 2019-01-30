@@ -1,7 +1,8 @@
-//función que medio sirve
-function cifrar (str){
+//función cifrado
+function encode (offset, str){
 
 	let arr = [];
+	str = str.toUpperCase();
 	for(let i = 0; i < str.length ; i++ ){
 
 		console.log('charCode ' + str.charCodeAt(i));
@@ -19,20 +20,23 @@ function cifrar (str){
 
 	}
  arr = arr.join('');
-return arr;
+ arr;
+	document.getElementById("outputText").innerHTML = arr;
 }
 
+//como llenar textarea con arr
+//innerHTML
+
+console.log(arr);
 
 function cipher(){
 	//la variable que captura el desplazamiento deseado
-	let offset = document.getElementById("offset").value;
+	let offset = parseInt(document.getElementById("offset").value);
 	//String es la variable que obtiene el texto ingresado por el usuario
-	let string = document.getElementById("inputText").value;
-	string = string.toUpperCase(); //colocar en la función cuando sirva
-	//convertir String a mayúsculas
-	console.log('El offset contiene ' + offset);
-	console.log('String es '+ string);
-	encode(offset,string);
+	let str = document.getElementById("inputText").value;
+	console.log('offset es ' + typeof offset);
+	console.log('String es '+ str);
+	encode(offset,str);
 };
 
 function reload(){
