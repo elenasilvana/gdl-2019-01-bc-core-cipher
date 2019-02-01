@@ -2,7 +2,7 @@
 
 //si offset está vacío mostrar mensaje de que hace falta llenar ese campo
 
-function cipher(){
+function cifrar(){
 	//la variable que captura el desplazamiento deseado
 	let offset = parseInt(document.getElementById("offset").value);
 	//String es la variable que obtiene el texto ingresado por el usuario
@@ -12,9 +12,10 @@ function cipher(){
 	cipher.encode(offset,str);
 	document.getElementById("resetElements").reset();
 };
+document.getElementById("cifrar").addEventListener("click",cifrar);
 
 
-function decipher(){
+function decifrar(){
 	//variable que captura el desplazamiento para descifrar
 	let offset = parseInt(document.getElementById("offset").value);
 	//String es la variable que obtiene el texto ingresado por el usuario
@@ -26,8 +27,7 @@ function decipher(){
 
 
 }
-
-
+document.getElementById("descifrar").addEventListener("click",decifrar);
 
 function reload(){
 	location.reload();
