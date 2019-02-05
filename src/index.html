@@ -7,21 +7,29 @@
   </head>
   <body>
     <div id="root">
-      <h1>Cipher</h1>
-      <p>El cifrado César es un método de cifrado por sustitución de caracteres. Te servirá para mantener tus notas personales seguras.</p>
-    </div>
-    <form id="resetElements">      
-      <input type="text" id="inputText">
       <br>
-      <input type="number" name="offset" id="offset" min="1" max="99">
+      <h1>Cipher</h1>
+      <p>El cifrado César es un método de cifrado por sustitución de caracteres, indicando un número se realiza un desplazamiento en el alfabeto, este desplazamiento será aplicado al texto que ingreses. Si buscas mantener tus notas seguras y a salvo de los ojos curiosos, o tus apuntes de diario digital ésta es una buena opción para ti. Ingresa tu texto y elige un número para el desplazamiento, recuerda conservar el número para que puedas descifrarlo cuando lo requieras. </p>
+    <form id="resetElements">      
+      <input type="text" id="inputText" placeholder="Ingresa tu texto">
+      <br>
+      <br>
+      <input type="number" placeholder="Indica el número" name="offset" id="offset" min="1" max="99">
+      <br>
+      <br>
+    
     </form> 
-      <button type="button" id="cifrar">Cifrar</button>
-      <button type="button" id="descifrar">Descifrar</button>
+      <button type="button" class="button" id="cifrar">Cifrar</button>
+      <button type="button" class="button" id="descifrar">Descifrar</button>
       <br>
       <br>
       <textarea id="outputText"></textarea>
       <br>
-      <button type="button" id="refresh">Refresh</button>
+      <button type="button" class="button" id="refresh">Refresh</button>
+      <br>
+      <br>
+
+    </div>
       
     <script src="cipher.js"></script>
     <script src="index.js"></script>

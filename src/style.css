@@ -1,0 +1,55 @@
+h1 {
+	text-decoration: overline;
+}
+
+body {
+	text-align: center;
+	font: bold;
+	font-size: 18px;
+	background-color: #0097A7;
+	color: #E8F5E9;
+	word-wrap: break-word;
+	word-break: keep-all;
+
+
+}
+
+#root {
+	background-color: #80CBC4;
+}
+
+
+input, #outputText {
+  padding: 60px;
+  width: 110px;
+  border-radius: 10px;
+  text-align: center;
+  margin: auto;
+  background-color: #F1F8E9;
+}
+
+#offset {
+	padding: 20px;
+	width: 170px;
+	text-align: center;
+  	margin: auto;
+} 
+
+
+#outputText {
+	color: #607D8B;
+	
+}
+
+
+.button {
+	padding: 10px 25px;
+	font-size: 16px;
+	font: italic;
+	border-radius: 15px;
+	background-color: #AB47BC;
+	color: #BBDEFB;
+	cursor: pointer;
+
+
+}

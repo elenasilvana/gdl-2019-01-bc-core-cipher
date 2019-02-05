@@ -28,3 +28,5 @@ function decifrar(){
 	document.getElementById("outputText").innerHTML = outputStr;
 }
 document.getElementById("descifrar").addEventListener("click",decifrar);
+
+
