@@ -11,10 +11,10 @@ window.cipher = {
 				arr.push(String.fromCharCode(32));
 			}
 			else {
+				//arreglo que se llena con las letras que ya reflejan el desplazamiento
 				arr.push(String.fromCharCode(((str.charCodeAt(i) - 65 + offset) % 26 + 65)));
 				
 			}
-			 
 		}
 	arr = arr.join('');
 	//document.getElementById("outputText").innerHTML = arr;
@@ -32,6 +32,7 @@ decode: function (offset, str){
 				arr.push(String.fromCharCode(32));
 			}
 			else {
+				//arreglo que se llena con las letras a las que se les ha restado el desplazamiento
 				arr.push(String.fromCharCode(((str.charCodeAt(i) + 65 - offset) % 26 + 65)));
 				
 			}
