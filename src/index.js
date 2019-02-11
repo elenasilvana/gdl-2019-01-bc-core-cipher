@@ -11,9 +11,16 @@ function cifrar(){
 	let offset = parseInt(document.getElementById("offset").value);
 	//String es la variable que obtiene el texto ingresado por el usuario
 	let str = document.getElementById("inputText").value;
+	//validar campos
+	if(isNaN(offset) || (str === '')){
+		alert('Por favor ingresa un número y un texto para procesar');
+	}
+	else {
 	let outputStr = cipher.encode(offset,str);
 	document.getElementById("resetElements").reset();
 	document.getElementById("outputText").innerHTML = outputStr;
+
+	}
 }
 document.getElementById("cifrar").addEventListener("click",cifrar);
 
@@ -23,9 +30,15 @@ function decifrar(){
 	let offset = parseInt(document.getElementById("offset").value);
 	//String es la variable que obtiene el texto ingresado por el usuario
 	let str = document.getElementById("inputText").value;
+	//validar campos
+	if(isNaN(offset) || (str === '')){
+		alert('Por favor ingresa un número y un texto para procesar');
+	}
+	else {
 	let outputStr = cipher.decode(offset,str);
 	document.getElementById("resetElements").reset();
 	document.getElementById("outputText").innerHTML = outputStr;
+	}
 }
 document.getElementById("descifrar").addEventListener("click",decifrar);
 
