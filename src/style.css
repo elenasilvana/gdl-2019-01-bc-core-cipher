@@ -4,10 +4,10 @@ h1 {
 
 body {
 	text-align: center;
-	font: bold;
+	font-family: Arial, Helvetica, sans-serif;
 	font-size: 18px;
-	background-color: #0097A7;
-	color: #E8F5E9;
+	background-color: #49274A;
+	color: #EEEEEE;
 	word-wrap: break-word;
 	word-break: keep-all;
 
@@ -15,11 +15,11 @@ body {
 }
 
 #root {
-	background-color: #80CBC4;
+	background-color: #94618E;
 }
 
 
-input, #outputText {
+.txtArea {
   padding: 60px;
   width: 110px;
   border-radius: 10px;
@@ -33,22 +33,22 @@ input, #outputText {
 	width: 170px;
 	text-align: center;
   	margin: auto;
+  	background-color: #F1F8E9;
 } 
 
 
-#outputText {
+.txtArea {
 	color: #607D8B;
-	
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 
 .button {
 	padding: 10px 25px;
 	font-size: 16px;
-	font: italic;
 	border-radius: 15px;
-	background-color: #AB47BC;
-	color: #BBDEFB;
+	background-color: #F8EEE7;
+	color: #49274A;
 	cursor: pointer;
 
 

@@ -2,7 +2,7 @@ window.cipher = {
 
 	encode: function (offset, str){
 
-		let arr = [];
+		const arr = [];
 		str = str.toUpperCase();
 		for(let i = 0; i < str.length ; i++ ){
 			
@@ -16,14 +16,15 @@ window.cipher = {
 				
 			}
 		}
-	arr = arr.join('');
+	//arr = arr.join('');
+	const encodeText = arr.join(''); 
 	//document.getElementById("outputText").innerHTML = arr;
-	return arr;
+	return encodeText;
 },
 
 decode: function (offset, str){
 
-		let arr = [];
+		const arr = [];
 		str = str.toUpperCase();
 		for(let i = 0; i < str.length ; i++ ){
 
@@ -38,9 +39,10 @@ decode: function (offset, str){
 			}
 
 		}
-	arr = arr.join('');
+	//arr = arr.join('');
+	const decodeText = arr.join(''); 
 	//document.getElementById("outputText").innerHTML = arr;
-	return arr;
+	return decodeText;
 	}
 
   
