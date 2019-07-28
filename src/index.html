@@ -1,37 +1,59 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Caesar Cipher</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div id="root">
-      <br>
-      <h1>Cipher</h1>
-      <p>El cifrado César es un método de cifrado por sustitución de caracteres, indicando un número se realiza un desplazamiento en el alfabeto, este desplazamiento será aplicado al texto que ingreses. Si buscas mantener tus notas seguras y a salvo de los ojos curiosos, o tus apuntes de diario digital ésta es una buena opción para ti. Ingresa tu texto y elige un número para el desplazamiento, recuerda conservar el número para que puedas descifrarlo cuando lo requieras. </p>
-    <form id="resetElements"> 
-      <textarea id="inputText" class="txtArea" placeholder="Ingresa tu texto"></textarea>     
-      <br>
-      <br>
-      <input type="number" placeholder="Indica el número" name="offset" id="offset" min="1" max="99">
-      <br>
-      <br>
+
+<head>
+  <meta charset="utf-8">
+  <title>Secret Cipher</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div id="root">
+  </div>
+
+  <main class="cipher-content">
     
-    </form> 
+    <header class="header">
+      <h1>Secret Cipher</h1>
+    </header>
+    <div class="introduction-text">
+        <p>El cifrado César es un método de cifrado por sustitución de caracteres, indicando un número se realiza un
+            desplazamiento en el alfabeto, este desplazamiento será aplicado al texto que ingreses. Si buscas mantener tus
+            notas seguras y a salvo de los ojos curiosos, o tus apuntes de diario digital ésta es una buena opción para ti.
+            Ingresa tu texto y elige un número para el desplazamiento, recuerda conservar el número para que puedas
+            descifrarlo cuando lo requieras. </p>
+    </div>
+    <div class="container">
+        <div class="txt-area-input">
+            <form id="resetElements">
+               <!--
+                 <textarea id="inputText" class="txtArea" placeholder="Ingresa tu texto"></textarea>
+              --> 
+              <textarea class="textinput" id="inputText" placeholder="Introduce el texto que deseas cifrar"></textarea>
+          
+                <input type="number" placeholder="Indica el número" name="offset" id="offset" min="1" max="99">
+          
+              </form>
+        </div>
+    </div>
+    <div class="buttons-cntnt">
       <button type="button" class="button" id="cifrar">Cifrar</button>
       <button type="button" class="button" id="descifrar">Descifrar</button>
-      <br>
-      <br>
-      <textarea id="outputText" class="txtArea"></textarea>
-      <br>
-      <button type="button" class="button" id="refresh">Refresh</button>
-      <br>
-      <br>
 
     </div>
-      
-    <script src="cipher.js"></script>
-    <script src="index.js"></script>
-  </body>
+  
+    <div class="output-div">
+        <textarea id="outputText" class="textinput"></textarea>
+    </div>
+  
+    <button type="button" class="button" id="refresh">Refresh</button>
+
+
+
+  </main>
+
+  <script src="cipher.js"></script>
+  <script src="index.js"></script>
+</body>
+
 </html>
